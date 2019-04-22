@@ -1,0 +1,155 @@
+/*
+Issues, Questions:
+1. Nav-bar, which font do you have to use? 
+2. Nav-bar, "cambiar la alinacion vertical" Why should I? 
+   I made the class top-left float to the left and now it is on the same line
+   as the links.
+3. Header top row is not responsive. I am not sure if I needed to implement all the 
+   different div elements. The different width % for every div makes it difficult
+   to maintain.
+4. The city-scape image can only be a background image if you want to stretch it
+   in the entire header section. So why does the instruction say to use the float right?
+5. I am struggling with the use of relative margins and positions. 
+   Should I use percentages or absolute units px? Since we didn't learn how to make
+   responsive websites is it wise to use percentage? For example the width of different 
+   div elements where I used percentages.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding-top: 5px;
+  height: 25px;
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.top-left {
+  display:inline-block;
+  float: left;
+  margin: 0 0 0 20px;
+}
+
+/* HEADER */
+
+header{
+  background-color: rgb(35, 101, 136);
+  color:white;
+  height:400px;
+  background-image: url(images/city-scape.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header-top {
+  height: 50px;
+  padding: 5px 5px 0px 10px;
+}
+
+header img{
+  
+  width: 100%;
+  max-width:100%;
+  max-height:100%;
+  height:auto;
+  
+}
+
+header a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+.box-logo{
+  width:10%;
+  height:35px;
+  padding-right:5px;
+}
+
+.box-search {
+  width:79%;
+  height:35px;
+  padding-right:5px; 
+}
+
+.box-bear{
+  width:25px;
+  height:25px;
+  
+}
+
+.box-sign {
+  width:8%;
+}
+
+header input {
+  width:93%;
+  height:auto%;
+  border: 1px solid #ccc;
+  margin-right:0px;
+  padding:6px;
+  background:rgb(31, 82, 111);
+  margin-right:0px;
+  color: rgba(255,255,255,0.8);
+}
+
+form button {
+  width:5%;
+  height:auto%;
+  margin-left:0px;
+  border: 1px solid #ccc;
+  background:rgb(31, 82, 111);
+  padding:6px;
+  color: rgba(255,255,255,0.8);
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clear{
+  clear:both;
+}
+
+header article{
+  margin: 4% 20% 10% 20%;
+  position:absolute;
+  width:31%;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 50; 
+}
+
+
+
+
+
+
+

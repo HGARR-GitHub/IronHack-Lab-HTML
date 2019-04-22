@@ -8,6 +8,7 @@
 
   <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   
@@ -23,30 +24,42 @@
       <li><a href="#">documentation</a></li>
       <li><a href="#">support</a></li>
     </ul>
+    <div class="clearfix"></div>
   </nav>
 
   <header>
-    <div class="header-logo">
-      <img src="images/npm-logo.png" alt="NPM Logo">
-    </div>
-
-    <form id="searchbar">
-          <input type="text" placeholder="Search..">
-          <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-     
-    <div class="header-login">
-      <a class = "login" href="#">Sign Up or Log In</a>
-      <img src="images/bear-logo.png" alt="Bear Logo">
-    </div>
     
-    <article>
-      <h1> Build amazing things</h1>
-      <p>npm is the package manager for JavaScript and 
-        the world's largest software registry. Discover packages of 
-        reusable code -- and asemble them in powerful new ways.</p>
-      <button type="submit">Sign up for npm</button>
-    </article>
+      <div id="header-top">
+        
+        <div class="box-logo left">
+          <img src="images/npm-logo.png" alt="npm logo" >
+        </div>
+        <div class="box-search left">
+          <form>
+            <input type="text" placeholder="find packages..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="box-sign left">
+          <a href="#">sign up or log in</a>
+        </div>
+        <div class="box-bear left">
+          <img src="images/bear-logo.png" alt="bear logo">
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+     
+        <article>
+          <h1> Build amazing things</h1>
+          <p>npm is the package manager for JavaScript and 
+          the world's largest software registry. Discover packages of 
+          reusable code -- and assemble them in powerful new ways.</p>
+          <button type="submit">Sign up for npm</button>
+        </article>
+       
+        
+      
     
   </header>
 
