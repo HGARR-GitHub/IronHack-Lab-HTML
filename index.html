@@ -31,93 +31,99 @@
     
       <div id="header-top">
         
-        <div class="box-logo left">
+        <div class="box box-logo">
           <img src="images/npm-logo.png" alt="npm logo" >
         </div>
-        <div class="box-search left">
+        <div class="box box-search">
           <form>
             <input type="text" placeholder="find packages..">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
-        <div class="box-sign left">
+        <div class="box box-signup">
           <a href="#">sign up or log in</a>
         </div>
-        <div class="box-bear left">
+        <div class="box box-bear">
           <img src="images/bear-logo.png" alt="bear logo">
         </div>
         <div class="clear"></div>
       </div>
       
-     
-        <article>
-          <h1> Build amazing things</h1>
+    <div class="container"> 
+      <article>
+        <h1> Build amazing things</h1>
           <p>npm is the package manager for JavaScript and 
           the world's largest software registry. Discover packages of 
           reusable code -- and assemble them in powerful new ways.</p>
-          <button type="submit">Sign up for npm</button>
-        </article>
-       
-        
-      
-    
+        <button class="shape-btn" type="submit">Sign up for npm</button>
+      </article>
+    </div>   
   </header>
 
 
   <section id="collaboration">
     <div class="container">
+      
       <img src="images/collaboration.svg" alt="People collaborating together">
-      <article>
-        <h1>npm Orgs is powerfull collaboration -- for free</h1>
+      
+      <article class="right">
+        <h2>npm Orgs is powerfull collaboration -- for free</h2>
         <ul>
           <li>Encourage code discovery and re-use within teams</li>
           <li>Publish and control access to your own namespace</li>
           <li>Manage public and private code with the same workflow</li>
         </ul>
-        <button type="submit">Sign up for Orgs</button>
+        <button class="shape-btn" type="submit">Sign up for Orgs</button>
         <p>or, Learn more about Orgs</p>
       </article>
+      <div class="clear"></div>
     </div>
   </section>
 
   <section id="general-info">
     <div class="container">
       <article>
-          <h1>What is npm?</h1>
+          <h2>What is npm?</h2>
           <p>Use npm to install, share and distrobute code;
              manage dependencies in your projects; and share and receive
             feedback with others</p>
-            <button type="submit">Install npm</button>
+            <button class="shape-btn" type="submit">Install npm</button>
       </article>
     </div>
   </section>
 
   <section id="buildingblocks">
     <div class="container">
-      <h1>What can you make with 475.000 building blocks?</h1>
-      <p>The npm registry hosts almost half a million packages of free ,reusable code -- 
+      <div>
+        <h2>What can you make with 475.000 building blocks?</h2>
+        <p>The npm registry hosts almost half a million packages of free ,reusable code -- 
         the largest registry in the world.</p>
-      <article>
-        <img src="images/binoculars.svg">
-        <h3>Find</h3>
-        <p>Libraries like <a href="#">Jquery</a>, <a href="#">Bootstrap</a>, 
-          <a href="#">React</a> and <a href="#">Angular</a>, 
-           and components from frameworks such as <a href="#">Ember</a>.</p> 
-      </article>
+      </div>
 
-      <article>
+      <div>
+        <article class="block left">
+          <img src="images/binoculars.svg">
+          <h3>Find</h3>
+          <p>Libraries like <a href="#">Jquery</a>, <a href="#">Bootstrap</a>, 
+            <a href="#">React</a> and <a href="#">Angular</a>, 
+             and components from frameworks such as <a href="#">Ember</a>.</p> 
+        </article>
+
+        <article class="block left">
           <img src="images/mountain-flag.svg">
           <h3>Discover</h3>
           <p>Packages for mobile, IoT, front end, back end, robotics...
             everything you need to start building amazing things.</p> 
         </article>
 
-        <article>
+        <article class="block left">
             <img src="images/backpack.svg">
             <h3>Build</h3>
             <p>Assemble packages like building blocks to quickly develop
               awesome new projects.</p> 
-          </article>
+        </article>
+        <div class="clear"></div>
+      </div>
     </div>
   </section>
 
