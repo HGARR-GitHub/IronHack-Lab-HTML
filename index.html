@@ -31,26 +31,27 @@
     
       <div id="header-top">
         
-        <div class="box box-logo">
+        <div class="box-logo left">
           <img src="images/npm-logo.png" alt="npm logo" >
         </div>
-        <div class="box box-search">
-          <form>
-            <input type="text" placeholder="find packages..">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
+
+        <div class="box-search left">
+          <input type="text" class="searchText" placeholder="find packages..">
+          <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>       
         </div>
-        <div class="box box-signup">
-          <a href="#">sign up or log in</a>
+
+        <div class="box-signup right">
+          <div id="box-bear" class="right">
+            <img src="images/bear-logo.png" alt="bear logo">
+          </div>
+          <a class="right" href ="#">sign up or log in</a>
         </div>
-        <div class="box box-bear">
-          <img src="images/bear-logo.png" alt="bear logo">
-        </div>
+
         <div class="clear"></div>
       </div>
       
     <div class="container"> 
-      <article>
+      <article id="headerText">
         <h1> Build amazing things</h1>
           <p>npm is the package manager for JavaScript and 
           the world's largest software registry. Discover packages of 
@@ -74,7 +75,7 @@
           <li>Manage public and private code with the same workflow</li>
         </ul>
         <button class="shape-btn" type="submit">Sign up for Orgs</button>
-        <p>or, Learn more about Orgs</p>
+        <p>or, <a href="#"><strong>Learn more about Orgs</strong></a></p>
       </article>
       <div class="clear"></div>
     </div>
@@ -94,9 +95,9 @@
 
   <section id="buildingblocks">
     <div class="container">
-      <div>
+      <div id="blockheadertext">
         <h2>What can you make with 475.000 building blocks?</h2>
-        <p>The npm registry hosts almost half a million packages of free ,reusable code -- 
+        <p class="blocktext">The npm registry hosts almost half a million packages of free,reusable code -- 
         the largest registry in the world.</p>
       </div>
 
@@ -104,7 +105,7 @@
         <article class="block left">
           <img src="images/binoculars.svg">
           <h3>Find</h3>
-          <p>Libraries like <a href="#">Jquery</a>, <a href="#">Bootstrap</a>, 
+          <p class="blocktext">Libraries like <a href="#">Jquery</a>, <a href="#">Bootstrap</a>, 
             <a href="#">React</a> and <a href="#">Angular</a>, 
              and components from frameworks such as <a href="#">Ember</a>.</p> 
         </article>
@@ -112,14 +113,14 @@
         <article class="block left">
           <img src="images/mountain-flag.svg">
           <h3>Discover</h3>
-          <p>Packages for mobile, IoT, front end, back end, robotics...
+          <p class="blocktext">Packages for mobile, IoT, front end, back end, robotics...
             everything you need to start building amazing things.</p> 
         </article>
 
         <article class="block left">
             <img src="images/backpack.svg">
             <h3>Build</h3>
-            <p>Assemble packages like building blocks to quickly develop
+            <p class="blocktext">Assemble packages like building blocks to quickly develop
               awesome new projects.</p> 
         </article>
         <div class="clear"></div>

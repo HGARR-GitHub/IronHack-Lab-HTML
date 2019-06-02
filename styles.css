@@ -1,19 +1,17 @@
 /*
 Issues, Questions:
-1. Nav-bar, which font do you have to use? 
-2. Nav-bar, "cambiar la alinacion vertical" Why should I? 
-   I made the class top-left float to the left and now it is on the same line
-   as the links.
-3. Header top row is not responsive. I am not sure if I needed to implement all the 
-   different div elements. The different width % for every div makes it difficult
-   to maintain. I am struggling with the use of relative margins and positions. 
-   Should I use percentages or absolute units px? Struggling making it
-   responsive when you resize the window. The elements move all over when you make the 
+1. Nav-bar, I didn't check the font that was used in the example. I set my own font 
+2. Nav-bar: I adjusted the size of the heart so the text would align with the links on the right.
+3. Header top row is not responsive. The elements move all over when you make the 
    window smaller.
-4. The city-scape image can only be a background image if you want to stretch it
+4. I am not sure if I needed to implement all the different div elements. 
+   The different width % for every div makes it difficult to maintain. I am struggling with the use of relative margins and positions. 
+   Should I use percentages or absolute units px? 
+4. "Sign in..." text in the middle using positioning. Verticla-Align on the Div didnt work.
+5. The city-scape image can only be a background image if you want to stretch it
    in the entire header section. So why does the instruction say to use the float right?
-5. How to get the "Sign in..." text in the middle of the box? Vertical-align does not work.
 6. The magnifiyng glass box is not places against the input box. There is no margin so why?
+7. Also the margin between "Sign up.." text and the magnifying glas box is something I can't seem to make smaller.
 */
 
 * {
@@ -27,7 +25,7 @@ nav {
   background-color: #C12127;
   color: rgba(255,255,255,0.8);
   padding-top: 5px;
-  height: 25px;
+  height:30px;
 }
 
 nav a {
@@ -49,113 +47,83 @@ nav a {
 
 .top-left {
   display:inline-block;
-  float: left;
   margin: 0 0 0 20px;
 }
 
-/* HEADER */
+.heart{
+  width:0 auto;
+  font-size: 12px;
+}
 
 header{
   background-color: rgb(35, 101, 136);
   color:white;
-  height:400px;
   background-image: url(images/city-scape.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container{
-  width:750px;
-  Margin:0 auto;
-  padding-top:25px;
-}
-
-
 #header-top {
   height: 40px;
   padding: 5px 10px 5px 10px;
 }
 
-header img{
+#header-top img{
   width: 100%;
   max-width:100%;
   max-height:100%;
   height:auto;
 }
 
-header a{
-  text-decoration: none;
-  color: rgba(255,255,255,0.6);
-  margin: 5px 0 5px 0;
-}
-
-.box{
-  height:35px;
-  float:left;
-  margin:0 auto;
-}
-
 .box-logo{
-  width:10%;
+  width:8%;
   padding-right:5px;
-}
-
-.box-search {
-  width:79%;
+  height:40px;
 }
 
 .box-signup {
   width:auto;
+  height:35px;
   font-size:12px;
-  margin-left:15px;
 }
 
-.box-bear{
-  height:25px;
-  width:25px;
+.box-signup a{
+  position:relative;
+  top:8px;
 }
 
-form input {
-  width:96%;
-  border: 1px solid #ccc;
-  margin:0px;
-  padding:10px 0px 10px 6px;
+#box-bear{
+  height:30px;
+  width:30px;
+}
+
+.box-search {
+  width: 83%;
+}
+.searchText{
+  width: 95%;
+  height: 35px;
+  border: 1px solid rgba(255,255,255,0.6);
   background:rgb(31, 82, 111);
-  margin-right:0px;
+  padding: 5px;
   color: rgba(255,255,255,0.8);
 }
-form button {
-  width:35px;
-  margin:0px;
-  border: 1px solid #ccc;
+
+.searchButton{
+  width: 40px;
+  height: 35px;
+  border: 1px solid rgba(255,255,255,0.6);
   background:rgb(31, 82, 111);
-  padding:10px 3px 10px 3px;
+  text-align: center;
   color: rgba(255,255,255,0.8);
-}
-
-.left{
-  float: left;
-}
-
-.right{
-  float: right;
-}
-.clear{
-  clear:both;
+  cursor: pointer;
+  margin-left:0;
 }
 
 header article{
-  position:absolute;
-  width:31%;
+  width:400px;
 }
-
-header article p{
-  margin-top:10px;
-  margin-bottom: 10px;
-  color: rgba(255,255,255,0.6);
-}
-
 
 header article button {
   background-color: rgb(240, 146, 51);
@@ -173,11 +141,51 @@ header article button {
   margin-top:15px;
 }
 
+
+#headerText{
+  padding-top:40px;
+  padding-bottom:80px;
+}
+.container{
+  width:750px;
+  Margin:0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+}
+
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+.clear{
+  clear:both;
+}
+
+
+
 h1{
   font-size: 40px;
   font-weight: 50; 
 }
 
+h2{
+  margin-bottom:15px;
+  color: rgba(255,255,255,0.8);
+  font-weight:lighter;
+}
+
+p{
+  font-size: 0.8em;
+  color: rgba(255,255,255,0.6);
+  margin-top:5px;
+}
 
 #collaboration{
   background-color: rgb(39, 53, 71);
@@ -190,24 +198,12 @@ h1{
   width:50%;
 }
 
-#collaboration h2{
-  margin-bottom:15px;
-  color: rgba(255,255,255,0.8);
-  font-weight:lighter;
-}
-
 #collaboration article {
   margin-left:20px;
   width:350px;
 }
 
 #collaboration ul {
-  font-size: 0.8em;
-  color: rgba(255,255,255,0.6);
-  margin-top:5px;
-}
-
-#collaboration p{
   font-size: 0.8em;
   color: rgba(255,255,255,0.6);
   margin-top:5px;
@@ -230,44 +226,59 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
-  
 }
 
 #general-info .container{
   position:relative;
 }
 
-#general-info h2{
-  margin-bottom:15px;
-  color: rgba(255,255,255,0.8);
-  font-weight:lighter;
-}
-
 #general-info article{
   width: 350px;
   position: absolute;
-  top:90px;
+  top:80px;
 }
 
 #general-info article button {
   background-color: rgb(49, 68, 88);
-  border: 2px solid rgb(49, 68, 88);
-  
+  border: 2px solid rgb(49, 68, 88); 
 }
 
-#general-info p{
-  font-size: 0.8em;
-  color: rgba(255,255,255,0.6);
-  margin-top:5px;
+
+#buildingblocks{
+  background-color: white;
+  margin-bottom:25px;
 }
 
-.buildingblocks h2{
+#buildingblocks h2{
   color: rgba(0,0,0,0.6);
   text-align: center;
 }
 
-.block{
-  width:250px;
-  text-align: center;
-  padding:10px 10px;
+#blockheadertext{
+  margin-top:40px;
 }
+
+.blocktext{
+  color: rgb(135, 145, 156);
+  text-align:center;
+}
+
+#buildingblocks a{
+  text-decoration: none;
+  color: rgb(208, 74, 73);
+}
+
+.block{
+  width:32.3333% ;
+  text-align: center;
+  padding:10px 30px;
+  margin-top:20px;
+  margin-right:5px;
+}
+
+.block h3{
+  color: rgb(83, 88, 98);
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
